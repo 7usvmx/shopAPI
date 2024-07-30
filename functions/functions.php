@@ -68,41 +68,6 @@ define("MB", 1048576);
 
     }
 
-    // Function getDataWhere($table, $where = null, $json = false){
-        
-    //     global $con;
-    //     global $data;
-
-    //     $stmt = $con->prepare("SELECT * FROM `$table` `$where` ");
-    //     $stmt->execute();
-    //     $count = $stmt->rowCount();
-
-        
-    //         if( $count > 0 ){
-    //             echo json_encode(array("status" => "success", "data" => $data));  
-                
-    //         }else{  
-    //             // echo json_encode(array("status" => "failure"));
-    //             echo json_encode(array("status" => "failure"));
-    //         }
-        
-    //     // if ($json) {
-    //     // }else{
-
-    //     //     if( $count > 0 ){
-    //     //         return $data;  
-                
-    //     //     }else{  
-    //     //         // echo json_encode(array("status" => "failure"));
-    //     //         return json_encode(array("status" => "failure"));
-    //     //     }
-    //     // }
-        
-    //     // return $response; 
-
-    // }
-
-
     Function checkIfWhereIsTrue($table, $where = null){
         
         global $con;
@@ -406,6 +371,42 @@ define("MB", 1048576);
     
         // End 
     }
+
+    Function getDataWhere($table, $where = null, $json = false){
+        
+        global $con;
+        global $data;
+
+        $stmt = $con->prepare("SELECT * FROM `$table` `$where` ");
+        $stmt->execute();
+        $count = $stmt->rowCount();
+
+        
+            if( $count > 0 ){
+                echo json_encode(array("status" => "success", "data" => $data));  
+                
+            }else{  
+                // echo json_encode(array("status" => "failure"));
+                echo json_encode(array("status" => "failure"));
+            }
+        
+        // if ($json) {
+        // }else{
+
+        //     if( $count > 0 ){
+        //         return $data;  
+                
+        //     }else{  
+        //         // echo json_encode(array("status" => "failure"));
+        //         return json_encode(array("status" => "failure"));
+        //     }
+        // }
+        
+        // return $response; 
+
+    }
+
+
 
 
     */

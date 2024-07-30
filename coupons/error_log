@@ -1,0 +1,24 @@
+[17-Jul-2024 10:09:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10:09:46' at line 1 in /home/husacdxs/public_html/api/shop/functions/functions.php:112
+Stack trace:
+#0 /home/husacdxs/public_html/api/shop/functions/functions.php(112): PDOStatement->execute()
+#1 /home/husacdxs/public_html/api/shop/coupons/checkCoupon.php(13): checkIfWhereIsTrue()
+#2 {main}
+  thrown in /home/husacdxs/public_html/api/shop/functions/functions.php on line 112
+[17-Jul-2024 10:10:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10:10:04' at line 1 in /home/husacdxs/public_html/api/shop/functions/functions.php:112
+Stack trace:
+#0 /home/husacdxs/public_html/api/shop/functions/functions.php(112): PDOStatement->execute()
+#1 /home/husacdxs/public_html/api/shop/coupons/checkCoupon.php(13): checkIfWhereIsTrue()
+#2 {main}
+  thrown in /home/husacdxs/public_html/api/shop/functions/functions.php on line 112
+[17-Jul-2024 10:10:48 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10:10:48' at line 1 in /home/husacdxs/public_html/api/shop/functions/functions.php:112
+Stack trace:
+#0 /home/husacdxs/public_html/api/shop/functions/functions.php(112): PDOStatement->execute()
+#1 /home/husacdxs/public_html/api/shop/coupons/checkCoupon.php(13): checkIfWhereIsTrue()
+#2 {main}
+  thrown in /home/husacdxs/public_html/api/shop/functions/functions.php on line 112
+[17-Jul-2024 10:11:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column '2024-07-17 10:11:56' in 'where clause' in /home/husacdxs/public_html/api/shop/functions/functions.php:112
+Stack trace:
+#0 /home/husacdxs/public_html/api/shop/functions/functions.php(112): PDOStatement->execute()
+#1 /home/husacdxs/public_html/api/shop/coupons/checkCoupon.php(13): checkIfWhereIsTrue()
+#2 {main}
+  thrown in /home/husacdxs/public_html/api/shop/functions/functions.php on line 112
